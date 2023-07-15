@@ -90,6 +90,106 @@ $APPLICATION->SetTitle("Главная");
 	)
 );?>
 
+</section>
+
+<!-- Start History Section -->
+<section id="history-app" class="history-app">
+    <div class="overlay">
+        <div class="container pddb20">
+            <!-- Start Our History -->
+            <div class="our-history">
+                <div class="row" style="display: flex; align-items: center">
+                    <div class="col-md-8 wow fadeInLeft" data-wow-duration="1s">
+                        <div class="text-history">
+                            <h4 class="title-hist mt-minus-10">О нас</h4>
+                            <p class="title-hist-p">Расположенная в 120 км от Москвы и в 60 км от Тулы. Базы отдыха является прекрасным местом, как для спокойного семейного отдыха, так и для большой компании.</p>
+                            <div class="numberfeat">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="tab-content">
+                                            <!-- Start Single #1 -->
+                                            <div class="tab-pane active" id="home-v">
+                                                <p><i class="fa fa-check"></i>Естественная красота Заокского района, отличный уровень сервиса, недорогая стоимость размещения делают базу отдыха Экспедиция  лучшим местом для поездки загород с любой целью. Всего 250 метров до реки Оки с песчаным пляжем и местом для купания. Вокруг - лес с красивейшими деревьями-сосны, березы, ель и многие другие!!! Так же если вам не хочется ленивого отдыха, всего в 3 км от базы находится знаменитый Музей-заповедник В.Д. Поленова. Это отличное место для экскурсий, для фотосессии и просто для прогулки по замечательной локации!</p>
+                                            </div>
+                                            <!-- End Single #1 -->
+                                        </div>
+                                        <div class="tab-content">
+                                            <!-- Start Single #1 -->
+                                            <div class="tab-pane active" id="home-v">
+                                                <p><i class="fa fa-check"></i>Помимо того, что Экспедиция предлагает своим гостям удачные варианты размещения по выгодным ценам, у нас можно еще и хорошо провести время. Хотите расслабиться на природе с семьей и друзьями, организовать выездное мероприятие или устроить незабываемый корпоратив? Любые Ваши желания зимой и летом сможет исполнить база отдыха Экспедиция! </p>
+                                            </div>
+                                            <!-- End Single #1 -->
+                                        </div>
+                                        <div class="tab-content">
+                                            <!-- Start Single #1 -->
+                                            <div class="tab-pane active" id="home-v">
+                                                <p><i class="fa fa-check"></i>Для размещения в Экспедиции есть разные коттеджи, вмещающие от 1 до 18 человек! С уютными спальнями, санузлом, кухней, удобной гостиной, мангальной заной, баней, собственной, закрытой территорией, детской площадкой, охраняемой парковкой и Wi-Fi по всей территории базы! Здесь есть вся необходимая мебель, посуда, телевизор, холодильник, микроволновая печь, детские кроватки! Так же есть возможность размещения и большего количества гостей за отдельную плату.</p>
+                                            </div>
+                                            <!-- End Single #1 -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start History Zoom Photo -->
+                    <div class="col-md-4 hidden-xs hidden-sm wow fadeInRight" data-wow-duration="1s">
+                        <div class="history-photo">
+                            <div class="zoom-frame">
+                                <img src="<?=SITE_TEMPLATE_PATH?>/img/besed.jpg" alt="Vanda" class="zoom-bg img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End History Zoom Photo -->
+                </div>
+            </div>
+            <!-- End Our History -->
+        </div>
+        <!-- Start Our Clients Slider -->
+        <div class="our-clients wow fadeInUp" data-wow-duration="1s">
+            <div class="clients-slider owl-carousel owl-theme">
+                <!-- Start Single #1 -->
+                <div class="item">
+                    <a href="home-1.html#">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/clients/client-0.png" alt="Vanda">
+                    </a>
+                </div>
+                <!-- End Single #1 -->
+                <!-- Start Single #2 -->
+                <div class="item">
+                    <a href="home-1.html#">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/clients/client-1.png" alt="Vanda">
+                    </a>
+                </div>
+                <!-- End Single #2 -->
+                <!-- Start Single #3 -->
+                <div class="item">
+                    <a href="home-1.html#">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/clients/client-2.png" alt="Vanda">
+                    </a>
+                </div>
+                <!-- End Single #3 -->
+                <!-- Start Single #4 -->
+                <div class="item">
+                    <a href="home-1.html#">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/clients/client-3.png" alt="Vanda">
+                    </a>
+                </div>
+                <!-- End Single #4 -->
+                <!-- Start Single #5 -->
+                <div class="item">
+                    <a href="home-1.html#">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/clients/client-4.png" alt="Vanda">
+                    </a>
+                </div>
+                <!-- End Single #5 -->
+            </div>
+        </div>
+        <!-- End Our Clients Slider -->
+    </div>
+</section>
+<!-- End History Section -->
+
 
 <?php
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
