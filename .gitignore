@@ -2,3 +2,5 @@
 /app/bitrix
 /app/upload
 .env
+.idea
+.DS_Store
