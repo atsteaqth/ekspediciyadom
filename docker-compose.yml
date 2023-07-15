@@ -1,0 +1,59 @@
+version: '3'
+
+services:
+  php:
+    build: ./docker/php8.2
+    volumes:
+      - ./docker/logs/php:/var/log/php
+      - ./app/:/var/www/app
+      - ./docker/sockets:/var/run/mysqld/
+    links:
+      - db
+      - memcached
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    restart: unless-stopped
+
+  memcached:
+    image: memcached:1.6.12-alpine
+    volumes:
+      - ./docker/logs/memcached:/var/log/memcached
+      - ./docker/cache:/var/lib/memcached
+
+    restart: unless-stopped
+
+  nginx:
+    build: ./docker/nginx
+    volumes:
+      - ./docker/logs/nginx:/var/log/nginx
+      - ./app/:/var/www/app
+      - ./docker/sockets:/var/run/mysqld/
+    ports:
+      - ${PORT_HTTP}:80
+      - ${PORT_HTTPS}:443
+    links:
+      - php
+    restart: unless-stopped
+
+  db:
+    image: mariadb:10.3-focal
+    volumes:
+      - ./docker/logs/db:/var/log/mysql
+      - ./docker/databases:/var/lib/mysql
+      - ./docker/sockets:/var/run/mysqld/
+      - ./docker/db/mysql.cnf:/etc/mysql/my.cnf
+      - ./app/:/var/www/app
+    ports:
+      - ${PORT_DB}:3306
+    restart: unless-stopped
+
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+  redis:
+    image: redis:latest
+    volumes:
+      - ./docker/redis/data:/data
+

@@ -1,0 +1,4 @@
+/docker
+/app/bitrix
+/app/upload
+.env
