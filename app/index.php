@@ -610,6 +610,74 @@ $APPLICATION->SetTitle("Главная");
     </div>
 </section>
 
+<!-- Start Contact Section -->
+<section id="contact" class="contact">
+    <div class="overlay pddt100 pddb90">
+        <div class="container">
+            <!-- Start Section Title -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2 class="mt-minus-10 wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1s">Наши контакты</h2>
+                        <h4 class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration="1s">Мы на связи</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- End Section Title -->
+            <!-- Start Form Place -->
+            <div class="form-place">
+                <div class="row">
+
+                    <!-- Start Info & Form -->
+                    <div class="col-md-12">
+                        <div class="row">
+                            <!-- Start Single Info #1 -->
+                            <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="1s">
+                                <div class="single-contact">
+                                    <i class="ion-ios-location"></i>
+                                    <h4>Адрес</h4>
+                                    <p>Тульская область, Заокский район, Велегож, ТЦПиО Экспедиция (Туристическая 3,4,5)</p>
+                                </div>
+                            </div>
+                            <!-- End Single Info #1 -->
+                            <!-- Start Single Info #2 -->
+                            <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-delay=".4s" data-wow-duration="1s">
+                                <div class="single-contact">
+                                    <i class="ion-ios-email"></i>
+                                    <h4>E-Mail</h4>
+                                    <p>marya.sy4eve@yandex.ru</p>
+                                </div>
+                            </div>
+                            <!-- End Single Info #2 -->
+                            <!-- Start Single Info #3 -->
+                            <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-delay=".6s" data-wow-duration="1s">
+                                <div class="single-contact">
+                                    <i class="ion-ios-telephone"></i>
+                                    <h4>Телефоны</h4>
+                                    <p><a style="color: #ffffff" href="tel:89066298899">8 906 629-88-99</a></p>
+                                    <p><a style="color: #ffffff" href="tel:89036976182">8 903 697-61-82</a></p>
+                                </div>
+                            </div>
+                            <!-- End Single Info #3 -->
+                        </div>
+                        <!-- Start Form Touch -->
+                        <div class="form-touch wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1s">
+                            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/10832/tula-oblast/search/%D0%A2%D1%83%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%97%D0%B0%D0%BE%D0%BA%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%20%D0%92%D0%B5%D0%BB%D0%B5%D0%B3%D0%BE%D0%B6%2C%20%D0%A2%D0%A6%D0%9F%D0%B8%D0%9E%20%D0%AD%D0%BA%D1%81%D0%BF%D0%B5%D0%B4%D0%B8%D1%86%D0%B8%D1%8F%20(%D0%A2%D1%83%D1%80%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%203%2C4%2C5)/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Тульская область, Заокский район, Велегож, ТЦПиО Экспедиция (Туристическая 3,4,5) в Тульской области</a><a href="https://yandex.ru/maps/10832/tula-oblast/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Тульская область</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUZiSTioA" width="100%" height="400" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+                        </div>
+                        <!-- End Form Touch -->
+                    </div>
+                    <!-- End Info & Form -->
+                </div>
+            </div>
+            <!-- End Form Place -->
+        </div>
+    </div>
+</section>
+<!-- End Contact Section -->
+<div class="container">
+
+</div>
+
 
 <?php
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
