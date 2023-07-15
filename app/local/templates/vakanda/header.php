@@ -41,7 +41,7 @@ global $APPLICATION
     <meta name="theme-color" content="#ffffff">
 
 
-    <?// $APPLICATION->ShowPanel(); ?>
+    <? $APPLICATION->ShowPanel(); ?>
 </head>
 <body>
 
